@@ -3,12 +3,13 @@ export default function translateFolderName(folderName: string) {
         "celestial": "🪐 Небесні тіла",
         "episodes": "🎬 Епізоди",
         "faction": "🚩 Фракції",
+        "location": "📍 Місця",
         "npc": "👤 НІПи",
         "pc": "👤 ІПи",
-        "region": "🧩 Регіони",
+        "region": "🗺️ Регіони",
         // Ігровий світ
         "season01": "Сезон 01",
-        "setting": "🌌 Сетинг",
+        "setting": "✨ Сетинг",
         "vessel": "🛸 Судна",
     }
 

@@ -1,24 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
-export default function translateFolderName(folderName: string) {
-    const nameMap: Record<string, string> = {
-        "celestial": "🪐 Небесні тіла",
-        "episodes": "🎬 Епізоди",
-        "faction": "🚩 Фракції",
-        "npc": "👤 НІПи",
-        "pc": "👤 ІПи",
-        "region": "🧩 Регіони",
-        // Ігровий світ
-        "season01": "Сезон 01",
-        "setting": "🌌 Сетинг",
-        "vessel": "🛸 Судна",
-    }
 
-    if (nameMap[folderName]) {
-        return nameMap[folderName]
-    }
-    return folderName
-}
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -64,12 +46,13 @@ export const defaultContentPageLayout: PageLayout = {
           "celestial": "🪐 Небесні тіла",
           "episodes": "🎬 Епізоди",
           "faction": "🚩 Фракції",
+          "location": "📍 Місця",
           "npc": "👤 НІПи",
           "pc": "👤 ІПи",
-          "region": "🧩 Регіони",
+          "region": "🗺️ Регіони",
           // Ігровий світ
           "season01": "Сезон 01",
-          "setting": "🌌 Сетинг",
+          "setting": "✨ Сетинг",
           "vessel": "🛸 Судна",
         }
 
@@ -109,12 +92,13 @@ export const defaultListPageLayout: PageLayout = {
           "celestial": "🪐 Небесні тіла",
           "episodes": "🎬 Епізоди",
           "faction": "🚩 Фракції",
+          "location": "📍 Місця",
           "npc": "👤 НІПи",
           "pc": "👤 ІПи",
-          "region": "🧩 Регіони",
+          "region": "🗺️ Регіони",
           // Ігровий світ
           "season01": "Сезон 01",
-          "setting": "🌌 Сетинг",
+          "setting": "✨ Сетинг",
           "vessel": "🛸 Судна",
         }
 
