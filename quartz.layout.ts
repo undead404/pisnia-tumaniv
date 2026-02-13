@@ -1,6 +1,24 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+export default function translateFolderName(folderName: string) {
+    const nameMap: Record<string, string> = {
+        "celestial": "🪐 Небесні тіла",
+        "episodes": "🎬 Епізоди",
+        "faction": "🚩 Фракції",
+        "npc": "👤 НІПи",
+        "pc": "👤 ІПи",
+        "region": "🧩 Регіони",
+        // Ігровий світ
+        "season01": "Сезон 01",
+        "setting": "🌌 Сетинг",
+        "vessel": "🛸 Судна",
+    }
 
+    if (nameMap[folderName]) {
+        return nameMap[folderName]
+    }
+    return folderName
+}
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -8,8 +26,8 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/undead404/pisnia-tumaniv",
+      "M87* Games у Discord": "https://discord.gg/M9bCu4Pt",
     },
   }),
 }
@@ -90,7 +108,7 @@ export const defaultListPageLayout: PageLayout = {
         const nameMap: Record<string, string> = {
           "celestial": "🪐 Небесні тіла",
           "episodes": "🎬 Епізоди",
-          "factions": "🚩 Фракції",
+          "faction": "🚩 Фракції",
           "npc": "👤 НІПи",
           "pc": "👤 ІПи",
           "region": "🧩 Регіони",
