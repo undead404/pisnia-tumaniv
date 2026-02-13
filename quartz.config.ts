@@ -23,37 +23,39 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
+        // Геометричний, трохи агресивний, асоціюється з Sci-Fi UI
         header: "Rajdhani",
-        body: "Space Grotesk",
+        // Читабельний, але з характером "технічної документації"
+        body: "Inter",
         code: "JetBrains Mono",
       },
       colors: {
         darkMode: {
-          light: "#0D1117",       // Майже чорний, колір мастила/космосу
-          lightgray: "#2D333B",   // Темна сталь обшивки
-          gray: "#586069",        // Попіл/Туман
-          darkgray: "#8b949e",    // Старий бетон
-          dark: "#c9d1d9",        // Текст (не чисто білий, а "старий екран")
+          light: "#0b0c10",       // Deep Void (глибокий космос)
+          lightgray: "#1f2833",   // Gunmetal (збройовий метал)
+          gray: "#45a29e",        // Oxidized Copper (окислена мідь/тьмяне світіння)
+          darkgray: "#c5c6c7",    // Steel (сталь)
+          dark: "#e3e4e6",        // Off-white text
 
-          // Замість пастельного синього — холодний, індустріальний колір
-          secondary: "#3fb950",   // Неоново-зелений (термінал/HUD) або Смарагд дому Аед (#2ea043)
+          secondary: "#66fcf1",   // Cyan/Electric Blue - активні елементи HUD
+          tertiary: "#ff4d4d",    // Alert Red - для контрасту небезпеки (замість спокійного зеленого)
 
-          // Замість м'ятного — колір іржі або попереджень
-          tertiary: "#d29922",    // Іржа/Бурштин
-
-          highlight: "rgba(56, 139, 253, 0.15)", // Холодне підсвічування голограми
-          textHighlight: "#1f6feb44",
+          highlight: "rgba(102, 252, 241, 0.15)", // HUD selection vibe
+          textHighlight: "#66fcf144",
         },
         lightMode: {
-          light: "#F0F0EE",       // Пергамент/Світлий бетон
-          lightgray: "#E5E5E0",
-          gray: "#A8A8A8",
-          darkgray: "#555555",
-          dark: "#222222",
-          secondary: "#1a5c37",   // Темний смарагд (офіційний)
-          tertiary: "#8c6a1c",    // Темна бронза
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          // "Архіви Цитаделі" - світла тема, схожа на паперові звіти
+          light: "#f5f5f0",
+          lightgray: "#e3e3dc",
+          gray: "#888880",
+          darkgray: "#40403a",
+          dark: "#1a1a18",
+
+          secondary: "#2e5c55",   // Swamp Green / Aet Uniform
+          tertiary: "#a63d40",    // Dried Blood / Wax Seal
+
+          highlight: "rgba(46, 92, 85, 0.15)",
+          textHighlight: "#d4c8be",
         },
       },
     },
