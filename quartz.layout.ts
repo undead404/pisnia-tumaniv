@@ -43,6 +43,7 @@ export const defaultContentPageLayout: PageLayout = {
       mapFn: (node) => {
         // Карта перейменувань: "назва папки" -> "красива назва"
         const nameMap: Record<string, string> = {
+          "cataphract": "⚔️ Катафракт",
           "celestial": "🪐 Небесні тіла",
           "episodes": "🎬 Епізоди",
           "faction": "🚩 Фракції",
@@ -89,6 +90,7 @@ export const defaultListPageLayout: PageLayout = {
       mapFn: (node) => {
         // Карта перейменувань: "назва папки" -> "красива назва"
         const nameMap: Record<string, string> = {
+          "cataphract": "⚔️ Катафракт",
           "celestial": "🪐 Небесні тіла",
           "episodes": "🎬 Епізоди",
           "faction": "🚩 Фракції",
