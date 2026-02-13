@@ -9,6 +9,7 @@ import { QuartzPluginData } from "../../plugins/vfile"
 import { ComponentChildren } from "preact"
 import { concatenateResources } from "../../util/resources"
 import { trieFromAllFiles } from "../../util/ctx"
+import translateFolderName from "../../helpers/translate-folder-name"
 
 interface FolderContentOptions {
   /**
@@ -81,7 +82,7 @@ export default ((opts?: Partial<FolderContentOptions>) => {
               slug: node.slug,
               dates: getMostRecentDates(),
               frontmatter: {
-                title: node.displayName,
+                title: translateFolderName(node.displayName),
                 tags: [],
               },
             }
