@@ -1,8 +1,6 @@
 ---
-title: Welcome to Quartz
+title: Пісня туманів
 ---
+Це база знань по кампанії "Пісня туманів" з настільно-рольової гри "Кавалерія", що випускається на [каналі YouTube видавництва M87* Games](https://www.youtube.com/@m87_games). Літописець – Олександр Тріфан.
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
-
-Test sync
+Кавалерія – НРІ авторства [Олександра Тріфана](https://www.patreon.com/cw/m87games), засновника видавництва M87* Games.
