@@ -23,32 +23,37 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Rajdhani",
+        body: "Space Grotesk",
+        code: "JetBrains Mono",
       },
       colors: {
+        darkMode: {
+          light: "#0D1117",       // Майже чорний, колір мастила/космосу
+          lightgray: "#2D333B",   // Темна сталь обшивки
+          gray: "#586069",        // Попіл/Туман
+          darkgray: "#8b949e",    // Старий бетон
+          dark: "#c9d1d9",        // Текст (не чисто білий, а "старий екран")
+
+          // Замість пастельного синього — холодний, індустріальний колір
+          secondary: "#3fb950",   // Неоново-зелений (термінал/HUD) або Смарагд дому Аед (#2ea043)
+
+          // Замість м'ятного — колір іржі або попереджень
+          tertiary: "#d29922",    // Іржа/Бурштин
+
+          highlight: "rgba(56, 139, 253, 0.15)", // Холодне підсвічування голограми
+          textHighlight: "#1f6feb44",
+        },
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
+          light: "#F0F0EE",       // Пергамент/Світлий бетон
+          lightgray: "#E5E5E0",
+          gray: "#A8A8A8",
+          darkgray: "#555555",
+          dark: "#222222",
+          secondary: "#1a5c37",   // Темний смарагд (офіційний)
+          tertiary: "#8c6a1c",    // Темна бронза
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#fff23688",
-        },
-        darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
         },
       },
     },
