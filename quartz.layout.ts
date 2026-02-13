@@ -38,7 +38,28 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      title: "Навігація",
+      mapFn: (node) => {
+        // Карта перейменувань: "назва папки" -> "красива назва"
+        const nameMap: Record<string, string> = {
+          "episodes": "🎬 Епізоди",
+          "faction": "🚩 Фракції",
+          "npc": "👤 НІПи",
+          "pc": "👤 ІПи",
+          "planet": "🪐 Планети",
+          "region": "🧩 Регіони",
+          // Ігровий світ
+          "season01": "Сезон 01",
+          "setting": "🌌 Сетинг",
+          "vessel": "🛸 Судна",
+        }
+
+        if (nameMap[node.displayName]) {
+          node.displayName = nameMap[node.displayName]
+        }
+      },
+    }),
   ],
   right: [
     Component.Graph(),
@@ -62,7 +83,28 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      title: "Навігація",
+      mapFn: (node) => {
+        // Карта перейменувань: "назва папки" -> "красива назва"
+        const nameMap: Record<string, string> = {
+          "episodes": "🎬 Епізоди",
+          "factions": "🚩 Фракції",
+          "npc": "👤 НІПи",
+          "pc": "👤 ІПи",
+          "planet": "🪐 Планети",
+          "region": "🧩 Регіони",
+          // Ігровий світ
+          "season01": "Сезон 01",
+          "setting": "🌌 Сетинг",
+          "vessel": "🛸 Судна",
+        }
+
+        if (nameMap[node.displayName]) {
+          node.displayName = nameMap[node.displayName]
+        }
+      },
+    }),
   ],
   right: [],
 }
