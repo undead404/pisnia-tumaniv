@@ -1,6 +1,6 @@
 export default function translateFolderName(folderName: string) {
     const nameMap: Record<string, string> = {
-        "cataphract": "⚔️ Катафракт",
+        "cataphract": "⚔️ Катафракти",
         "celestial": "🪐 Небесні тіла",
         "episodes": "🎬 Епізоди",
         "faction": "🚩 Фракції",
