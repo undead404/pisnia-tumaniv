@@ -9,7 +9,8 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/undead404/pisnia-tumaniv",
-      "M87* Games у Discord": "https://discord.gg/M9bCu4Pt",
+      "Пісня туманів на YouTube":
+        "https://www.youtube.com/watch?v=XVuelTxLhPk&list=PL2zoJ5Mco28pMShErqXngbEWYwr65IDCb",
     },
   }),
 }
