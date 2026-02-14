@@ -48,8 +48,9 @@ export const defaultContentPageLayout: PageLayout = {
           episodes: "🎬 Епізоди",
           faction: "🚩 Фракції",
           location: "📍 Місця",
-          npc: "👤 НІПи",
-          pc: "👤 ІПи",
+          npc: "🎭 НІПи",
+          pc: "🎭 ІПи",
+          player: "👤 Гравці",
           region: "🗺️ Регіони",
           // Ігровий світ
           season01: "Сезон 01",
@@ -95,8 +96,9 @@ export const defaultListPageLayout: PageLayout = {
           episodes: "🎬 Епізоди",
           faction: "🚩 Фракції",
           location: "📍 Місця",
-          npc: "👤 НІПи",
-          pc: "👤 ІПи",
+          npc: "🎭 НІПи",
+          pc: "🎭 ІПи",
+          player: "👤 Гравці",
           region: "🗺️ Регіони",
           // Ігровий світ
           season01: "Сезон 01",
