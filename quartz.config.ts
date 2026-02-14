@@ -31,14 +31,14 @@ const config: QuartzConfig = {
       },
       colors: {
         darkMode: {
-          light: "#0b0c10",       // Deep Void (глибокий космос)
-          lightgray: "#1f2833",   // Gunmetal (збройовий метал)
-          gray: "#45a29e",        // Oxidized Copper (окислена мідь/тьмяне світіння)
-          darkgray: "#c5c6c7",    // Steel (сталь)
-          dark: "#e3e4e6",        // Off-white text
+          light: "#0b0c10", // Deep Void (глибокий космос)
+          lightgray: "#1f2833", // Gunmetal (збройовий метал)
+          gray: "#45a29e", // Oxidized Copper (окислена мідь/тьмяне світіння)
+          darkgray: "#c5c6c7", // Steel (сталь)
+          dark: "#e3e4e6", // Off-white text
 
-          secondary: "#66fcf1",   // Cyan/Electric Blue - активні елементи HUD
-          tertiary: "#ff4d4d",    // Alert Red - для контрасту небезпеки (замість спокійного зеленого)
+          secondary: "#66fcf1", // Cyan/Electric Blue - активні елементи HUD
+          tertiary: "#ff4d4d", // Alert Red - для контрасту небезпеки (замість спокійного зеленого)
 
           highlight: "rgba(102, 252, 241, 0.15)", // HUD selection vibe
           textHighlight: "#66fcf144",
@@ -51,8 +51,8 @@ const config: QuartzConfig = {
           darkgray: "#40403a",
           dark: "#1a1a18",
 
-          secondary: "#2e5c55",   // Swamp Green / Aet Uniform
-          tertiary: "#a63d40",    // Dried Blood / Wax Seal
+          secondary: "#2e5c55", // Swamp Green / Aet Uniform
+          tertiary: "#a63d40", // Dried Blood / Wax Seal
 
           highlight: "rgba(46, 92, 85, 0.15)",
           textHighlight: "#d4c8be",
@@ -85,7 +85,31 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
+      Plugin.FolderPage({
+        sort: (a, b) => {
+          // Sort order: folders first, then files. Sort folders and files alphabeticall
+          if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+            // numeric: true: Whether numeric collation should be used, such that "1" < "2" < "10"
+            // sensitivity: "base": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A
+            return (
+              a.frontmatter?.title || (a.filePath?.split("/").at(-1) as string)
+            ).localeCompare(
+              b.frontmatter?.title || b.filePath?.split("/").at(-1) || "",
+              undefined,
+              {
+                numeric: true,
+                sensitivity: "base",
+              },
+            )
+          }
+
+          if (!a.isFolder && b.isFolder) {
+            return 1
+          } else {
+            return -1
+          }
+        },
+      }),
       Plugin.TagPage(),
       Plugin.ContentIndex({
         enableSiteMap: true,
