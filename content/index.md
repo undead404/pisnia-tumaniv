@@ -1,5 +1,6 @@
 ---
 title: База знань
+description: Живограй-серіал НРІ в жанрі темної наукової фантастики, що поєднує бої гігантських мехів та складні феодальні інтриги.
 ---
 ## Дивитися
 https://www.youtube.com/watch?v=XVuelTxLhPk&list=PL2zoJ5Mco28pMShErqXngbEWYwr65IDCb
