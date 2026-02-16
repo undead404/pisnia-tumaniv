@@ -42,26 +42,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer({
       title: "Навігація",
       mapFn: (node) => {
-        // Карта перейменувань: "назва папки" -> "красива назва"
-        const nameMap: Record<string, string> = {
-          cataphract: "⚔️ Катафракти",
-          celestial: "🪐 Небесні тіла",
-          episodes: "🎬 Епізоди",
-          faction: "🚩 Фракції",
-          location: "📍 Місця",
-          npc: "🎭 НІПи",
-          pc: "🎭 ІПи",
-          player: "👤 Гравці",
-          region: "🗺️ Регіони",
-          // Ігровий світ
-          season01: "Сезон 01",
-          setting: "✨ Сетинг",
-          vessel: "🛸 Судна",
-        }
-
-        if (nameMap[node.displayName]) {
-          node.displayName = nameMap[node.displayName]
-        }
+        return node;
       },
     }),
   ],
@@ -90,26 +71,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.Explorer({
       title: "Навігація",
       mapFn: (node) => {
-        // Карта перейменувань: "назва папки" -> "красива назва"
-        const nameMap: Record<string, string> = {
-          cataphract: "⚔️ Катафракти",
-          celestial: "🪐 Небесні тіла",
-          episodes: "🎬 Епізоди",
-          faction: "🚩 Фракції",
-          location: "📍 Місця",
-          npc: "🎭 НІПи",
-          pc: "🎭 ІПи",
-          player: "👤 Гравці",
-          region: "🗺️ Регіони",
-          // Ігровий світ
-          season01: "Сезон 01",
-          setting: "✨ Сетинг",
-          vessel: "🛸 Судна",
-        }
-
-        if (nameMap[node.displayName]) {
-          node.displayName = nameMap[node.displayName]
-        }
+        return node;
       },
     }),
   ],

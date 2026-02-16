@@ -1,4 +1,5 @@
 import type { QuartzConfig } from "./quartz/cfg"
+import cleanNonTelling from "./quartz/helpers/clean-non-telling"
 import * as Plugin from "./quartz/plugins"
 
 /**
@@ -87,20 +88,18 @@ const config: QuartzConfig = {
       Plugin.ContentPage(),
       Plugin.FolderPage({
         sort: (a, b) => {
+          const aTitle = a.frontmatter?.title || (a.filePath?.split("/").at(-1) as string)
+          const cleanATitle = cleanNonTelling(aTitle);
+          const bTitle = b.frontmatter?.title || b.filePath?.split("/").at(-1) || ""
+          const cleanBTitle = cleanNonTelling(bTitle);
           // Sort order: folders first, then files. Sort folders and files alphabeticall
           if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
             // numeric: true: Whether numeric collation should be used, such that "1" < "2" < "10"
             // sensitivity: "base": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A
-            return (
-              a.frontmatter?.title || (a.filePath?.split("/").at(-1) as string)
-            ).localeCompare(
-              b.frontmatter?.title || b.filePath?.split("/").at(-1) || "",
-              undefined,
-              {
-                numeric: true,
-                sensitivity: "base",
-              },
-            )
+            return cleanATitle.localeCompare(cleanBTitle, undefined, {
+              numeric: true,
+              sensitivity: "base",
+            })
           }
 
           if (!a.isFolder && b.isFolder) {

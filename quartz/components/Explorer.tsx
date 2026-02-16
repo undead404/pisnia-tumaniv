@@ -8,6 +8,7 @@ import { i18n } from "../i18n"
 import { FileTrieNode } from "../util/fileTrie"
 import OverflowListFactory from "./OverflowList"
 import { concatenateResources } from "../util/resources"
+import cleanNonTelling from "../helpers/clean-non-telling"
 
 type OrderEntries = "sort" | "filter" | "map"
 
@@ -32,11 +33,13 @@ const defaultOptions: Options = {
   sortFn: (a, b) => {
     // Sort order: folders first, then files. Sort folders and files alphabeticall
     if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+      const cleanAName = cleanNonTelling(a.displayName);
+      const cleanBName = cleanNonTelling(b.displayName);
       // numeric: true: Whether numeric collation should be used, such that "1" < "2" < "10"
       // sensitivity: "base": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A
-      return a.displayName.localeCompare(b.displayName, undefined, {
-        numeric: true,
-        sensitivity: "base",
+      return cleanAName.localeCompare(cleanBName, undefined, {
+        // numeric: true,
+        // sensitivity: "base",
       })
     }
 
