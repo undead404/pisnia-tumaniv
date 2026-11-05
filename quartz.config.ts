@@ -17,7 +17,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "uk-UA",
-    baseUrl: "pisnia-tumaniv.pages.dev",
+    baseUrl: process.env.QUARTZ_BASE_URL ?? "pisnia-tumaniv.pages.dev",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
