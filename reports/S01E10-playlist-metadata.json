@@ -1,0 +1,79 @@
+{
+  "checked_on_local_date": "2026-11-06",
+  "timezone": "Europe/Kiev",
+  "source_url": "https://www.youtube.com/playlist?list=PL2zoJ5Mco28pMShErqXngbEWYwr65IDCb",
+  "retrieval_method": "Unauthenticated public HTML via curl; ytInitialData lockupViewModel",
+  "videos_visible_in_response": [
+    {
+      "video_id": "TqojeiyjTu0",
+      "title": "Банкети і відрубані пальці | Кавалерія — Епізод 14 | Меха НРІ",
+      "duration": "3:59:32"
+    },
+    {
+      "video_id": "y3pFV3hjP_0",
+      "title": "Ритуали та заколоти | Кавалерія — Епізод 13 | Меха НРІ",
+      "duration": "3:21:19"
+    },
+    {
+      "video_id": "ZkMXhghq_AE",
+      "title": "Втрачений спадок: Древня кров | Кавалерія — Епізод 12 | Меха НРІ",
+      "duration": "3:02:12"
+    },
+    {
+      "video_id": "Jks-wcBh64M",
+      "title": "Катакомби і вбивці | Кавалерія — Епізод 11 | Меха НРІ",
+      "duration": "3:00:12"
+    },
+    {
+      "video_id": "qDNdCXIu_Ew",
+      "title": "Вежі столиці | Кавалерія — Епізод 10 | Меха НРІ",
+      "duration": "3:27:52"
+    },
+    {
+      "video_id": "14NqNv_yjwc",
+      "title": "Шлях на турнір | Кавалерія — Епізод 9 | Меха НРІ",
+      "duration": "3:15:21"
+    },
+    {
+      "video_id": "a9mv6VyJo-8",
+      "title": "Після бою: Пастка ШІ та небезпечні рішення | Кавалерія — Епізод 8 | Меха НРІ",
+      "duration": "3:48:24"
+    },
+    {
+      "video_id": "eEUGCotugZM",
+      "title": "Древня лабораторія | Кавалерія — Епізод 7 | Меха НРІ",
+      "duration": "3:22:05"
+    },
+    {
+      "video_id": "XVuelTxLhPk",
+      "title": "Що ховають болота  | Кавалерія — Епізод 6 | Меха НРІ",
+      "duration": "2:54:36"
+    },
+    {
+      "video_id": "q4r0Z27cSHk",
+      "title": "Хто чекав на болотах? | Кавалерія Епізод 5 | Меха НРІ",
+      "duration": "2:22:24"
+    },
+    {
+      "video_id": "cAUCdbkGdjg",
+      "title": "Відлуння минулого: Що ховають руїни? | Кавалерія Еп. 4 | Меха НРІ",
+      "duration": "3:11:08"
+    },
+    {
+      "video_id": "3LwR8R6gsy0",
+      "title": "НЕСПОДІВАНА ЗУСТРІЧ на Хеґіррі | Кавалерія — Серія 3 | Меха НРІ",
+      "duration": "3:11:51"
+    },
+    {
+      "video_id": "V4Qdyl8VT_U",
+      "title": "Загадки на орбіті | Кавалерія — Еп. 2 | Меха НРІ",
+      "duration": "3:08:25"
+    },
+    {
+      "video_id": "-RpSysKbIcc",
+      "title": "Гіперсни | Кавалерія — Серія 1 | Меха НРІ",
+      "duration": "3:09:23"
+    }
+  ],
+  "completeness": "Only this public response; no assertion that the season is complete."
+}
