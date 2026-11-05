@@ -98,12 +98,19 @@ actually covered by the work.
 
 ## Language, identity, and structure
 
+- `content/setting/npc/` is only for persons who actually appear in the campaign
+  or are explicitly mentioned as being alive. Persons appearing only in tales,
+  historical chronicles, or indirect implications do not belong in this branch
+  and do not require standalone NPC articles. Document their established context
+  in the relevant lore, event, or artifact article instead. For example, the name
+  Ізріана on a dagger does not warrant a separate NPC article.
 - Write all reader-facing content in Ukrainian. Preserve Obsidian Markdown,
   including wikilinks, embeds, frontmatter, and callouts where used.
 - Before creating or expanding an article, inspect sibling articles and follow
   their structure, frontmatter conventions, tone, and level of detail, subject to
   these instructions.
-- Campaign-specific names and terms absent from a modern Ukrainian dictionary
+- Subject to the NPC eligibility rule above, campaign-specific names and terms
+  absent from a modern Ukrainian dictionary
   must have articles under the appropriate content branch. Familiar words with
   a special in-world meaning also need articles. Ordinary vocabulary does not
   require standalone articles. Do not invent definitions for unexplained terms;
