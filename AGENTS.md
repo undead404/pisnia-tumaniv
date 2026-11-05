@@ -123,8 +123,18 @@ actually covered by the work.
 ## Entity chronicles
 
 Entity articles under `content/cataphract/` and `content/setting/` must contain
-the exact level-two heading `## 📅 Хроніка`. Directory landing pages (`index.md`)
-are navigation pages and do not need fictional appearance entries.
+the exact level-two heading `## 📅 Хроніка`, with the exceptions below.
+
+- Directory landing pages (`index.md`) are navigation pages and do not need
+  fictional appearance entries.
+- `content/setting/Спектр.md` is a general concept article and must not contain
+  an episode-by-episode chronicle. Since the campaign follows spectres, such a
+  chronicle would duplicate the whole story. Keep this article focused on the
+  established meaning of the term and relevant links; record individual
+  spectres’ actions in their own articles and episode recaps.
+
+This exception is specific to `Спектр.md`; it does not exempt individual
+characters or other entity articles from applicable chronicle requirements.
 
 Use one level-three subsection per episode in which the entity appears or is
 meaningfully mentioned, ordered by episode. Use the canonical episode path and
