@@ -1,4 +1,13 @@
-# Quartz v4
+# Пісня туманів
+
+Українська енциклопедія сюжету та лору живограй-серіалу
+[«Кавалерія: Пісня туманів»](https://www.youtube.com/playlist?list=PL2zoJ5Mco28pMShErqXngbEWYwr65IDCb).
+Перший сезон ще публікується; огляди охоплюють лише опубліковані епізоди.
+
+Правила джерел, структури статей та агентного збагачення вмісту викладено в
+[AGENTS.md](AGENTS.md). Прочитайте їх перед редагуванням матеріалів.
+
+## Quartz v4
 
 > “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
 
