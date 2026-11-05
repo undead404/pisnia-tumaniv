@@ -73,12 +73,12 @@ actually covered by the work.
 
 ### Source precedence
 
-- Existing articles take precedence over episode transcripts. Transcripts are
-  discovery aids and may contain transcription errors; preserve established names
-  and terminology rather than copying conflicting transcript spellings.
-- Use the published recordings to verify ambiguous names, numbers, relationships,
-  and consequential events. If clearly verified audio conflicts with an existing
-  article, flag the discrepancy for user review; do not silently overwrite it.
+- YouTube transcripts take precedence over existing articles for the order of
+  events. Existing articles take precedence only for orthography of names and
+  terms; apply explicit user corrections to canonical spellings and identities.
+- Transcripts remain error-prone discovery aids. Use published recordings to
+  verify material ambiguities not resolved by the user. Flag unresolved factual
+  discrepancies for review rather than inventing details.
 - Do not use Kavaleriia's rulebook, external setting lore, or other campaigns as
   sources. Include only lore established in this series, keeping the published
   episodes a work in their own right.
