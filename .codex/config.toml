@@ -1,0 +1,6 @@
+# Project-local defaults; managed policies and explicit session settings take precedence.
+sandbox_mode = "workspace-write"
+approval_policy = "on-request"
+
+[sandbox_workspace_write]
+network_access = false
