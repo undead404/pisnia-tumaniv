@@ -96,6 +96,45 @@ actually covered by the work.
   evidence and source conflicts in the review report, not as invented facts in
   published prose.
 
+## Story-focused editorial voice
+
+- Write articles as a knowledge base of the story and its world. Describe
+  fictional events, discoveries, and consequences directly, without framing
+  them as a tabletop session log.
+- Mentions of «Кавалерія» and its game mechanics are allowed throughout the
+  articles: this actual play also promotes the TTRPG. Preserve source-supported
+  mechanical details such as dice rolls, checks, points gained or deducted,
+  numerical ratings, and resource changes. Do not remove or replace them with
+  purely fictional descriptions merely to maintain the story-focused voice.
+  Keep mechanics distinguishable from fictional facts; they do not require
+  attributing explanations to the game master. This allowance does not override
+  the restrictions on game-master mentions or definitely out-of-character jokes.
+- `content/index.md` is an exception to the story-focused editorial voice: it
+  may describe the actual-play format, credit the author and game master, and
+  identify players and their characters. This exception applies only to the
+  root homepage, not to other `index.md` navigation pages.
+- Mention Олександр Тріфан only in `content/player/Олександр Тріфан.md`
+  and `content/index.md`.
+  Elsewhere, do not refer to him by name, link to his page, or attribute material
+  to him as ведучий, літописець, game master, narrator, or an equivalent role.
+  These exceptions permit mentions on his own page and the root homepage;
+  they do not require or authorize expanding his own page.
+- Treat the game master's direct narration and explanations about the fictional
+  world as common knowledge and established facts for the encyclopedia. State
+  that information directly, without phrases such as «ведучий пояснює» or
+  «літописець описує». This editorial treatment does not imply that every
+  character knows the information. Dialogue and accounts of characters he
+  portrays remain those characters' statements: preserve attribution and any
+  uncertainty, rumour, belief, deception, or unreliable perspective.
+- Omit jokes and banter only when they are definitely out of character.
+  In-character jokes and humorous dialogue are allowed; they do not need to
+  affect the plot or establish a relationship to qualify for inclusion. Do not
+  remove a joke merely because it is humorous, seemingly irrelevant, or spoken
+  by a player. When its in-character status is uncertain, do not assume it is
+  out of character: preserve the existing account pending verification. Keep
+  jokes distinguishable from literal facts, and never turn a definitely
+  out-of-character exchange into fictional events or lore.
+
 ## Language, identity, and structure
 
 - `content/setting/npc/` is only for persons who actually appear in the campaign
