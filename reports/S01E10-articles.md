@@ -32,7 +32,7 @@
 
 - [Княжа вежа](../content/setting/location/Княжа вежа.md)
 - [Вітраж родини Ярри](../content/setting/artifact/Вітраж родини Ярри.md)
-- [Брати Ярри](../content/setting/faction/Брати Ярри.md)
+- [Брати Ярри — у статті Аедрам](../content/setting/faction/Аедрам.md)
 - [Князівство трьох хребтів](../content/setting/faction/Князівство трьох хребтів.md)
 - [Контрабандисти із західної долини](../content/setting/faction/Контрабандисти із західної долини.md)
 - [Рада князів](../content/setting/faction/Рада князів.md)
@@ -67,7 +67,7 @@
 
 ### Майстерня й оповідь (90–135 хв)
 
-[Люмінесцентні квіти](../content/setting/biology/plant/Люмінесцентні квіти.md), [Майстерня Шебезука](../content/setting/location/Майстерня Шебезука.md), [Люменограф](../content/setting/culture/Люменограф.md), [Шебезук](../content/setting/npc/Шебезук.md), [Кварц](../content/setting/material/Кварц.md), [Вітраж родини Ярри](../content/setting/artifact/Вітраж родини Ярри.md), [Каедор Ан-Аедрам](../content/setting/npc/Каедор Ан-Аедрам.md), [Брати Ярри](../content/setting/faction/Брати Ярри.md), [Сини Шагаракта](../content/setting/faction/Сини Шагаракта.md), [Князівство трьох хребтів](../content/setting/faction/Князівство трьох хребтів.md), [Ясін Кан](../content/setting/npc/Ясін Кан.md), [Руді гори](../content/setting/region/Руді гори.md), [Спис гаскаурів Клинків обрію](../content/setting/faction/Спис гаскаурів Клинків обрію.md), [Виючий клин](../content/setting/location/Виючий клин.md), [Гармут](../content/setting/biology/animal/Гармут.md), [Тарсійські племена](../content/setting/faction/Тарсійські племена.md), [Пеларський домініон](../content/setting/region/Пеларський домініон.md), [Легенда про Сарсала](../content/setting/culture/lore/Легенда про Сарсала.md), [Вівтар Іргалтура](../content/setting/location/Вівтар Іргалтура.md).
+[Люмінесцентні квіти](../content/setting/biology/plant/Люмінесцентні квіти.md), [Майстерня Шебезука](../content/setting/location/Майстерня Шебезука.md), [Люменограф](../content/setting/culture/Люменограф.md), [Шебезук](../content/setting/npc/Шебезук.md), [Кварц](../content/setting/material/Кварц.md), [Вітраж родини Ярри](../content/setting/artifact/Вітраж родини Ярри.md), [Каедор Ан-Аедрам](../content/setting/npc/Каедор Ан-Аедрам.md), [Брати Ярри — у статті Аедрам](../content/setting/faction/Аедрам.md), [Сини Шагаракта](../content/setting/faction/Сини Шагаракта.md), [Князівство трьох хребтів](../content/setting/faction/Князівство трьох хребтів.md), [Ясін Кан](../content/setting/npc/Ясін Кан.md), [Руді гори](../content/setting/region/Руді гори.md), [Спис гаскаурів Клинків обрію](../content/setting/faction/Спис гаскаурів Клинків обрію.md), [Виючий клин](../content/setting/location/Виючий клин.md), [Гармут](../content/setting/biology/animal/Гармут.md), [Тарсійські племена](../content/setting/faction/Тарсійські племена.md), [Пеларський домініон](../content/setting/region/Пеларський домініон.md), [Легенда про Сарсала](../content/setting/culture/lore/Легенда про Сарсала.md), [Вівтар Іргалтура](../content/setting/location/Вівтар Іргалтура.md).
 
 ### Духовний дім і видіння (135–165 хв)
 
@@ -109,3 +109,5 @@
 - У секції `## Дивитися` S01E10 є тільки заданий YouTube URL. Огляд сезону явно закінчує охоплення на S01E10.
 - `git diff --check` пройдено. Код не змінювався; збірка не вважалася доказом повноти контенту.
 - Коміту, пушу та публікації не виконано.
+
+Уточнення структури: окрему статтю «Брати Ярри» прибрано за вказівкою користувача; перелік братів і відомості S01E10 та S01E13 перенесено до «Аедрам».

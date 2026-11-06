@@ -160,6 +160,19 @@ source for other episodes. Describe the entity's involvement, discoveries, and
 changes, without duplicating the entire episode recap. Do not fabricate an
 appearance to populate a chronicle.
 
+### Scope of the Хегірра article
+
+`content/setting/celestial/Хегірра.md` describes what is established about the
+planet and its inhabitants in general: geography, environment, ecology,
+history, technological heritage, societies, customs, and beliefs. Its
+`## 📅 Хроніка` records episodes that reveal such knowledge, rather than every
+episode set on the planet. Do not add entries merely because characters arrive,
+travel, fight, meet someone, or take political action on Хегірра. Record those
+ongoing events in the relevant character, faction, location, and episode articles.
+Keep local observations geographically scoped and distinguish inhabitants' beliefs
+from established planetary facts. An episode with no new general knowledge about
+the planet or its inhabitants does not need an entry here.
+
 ## Episode articles and recaps
 
 - `content/episodes/` contains season directories, with one article per episode
@@ -167,6 +180,15 @@ appearance to populate a chronicle.
   episode articles and preserve existing episode identifiers.
 - Every episode article must have `## Дивитися`. That section contains only the
   episode's YouTube link, with no commentary, embeds, or additional links.
+- Every episode article under `content/episodes/*/` must end with exactly one
+  `## Далі` section. It contains a wikilink to the next episode article in episode
+  order, using its canonical path (for example,
+  `[[episodes/season01/S01E02|S01E02]]`). If the next episode article does not yet
+  exist in this repository, the section contains only `...буде`. Do not link to
+  a nonexistent article or skip a missing episode to reach a later one. When
+  adding an episode, update the previous episode's `## Далі` link as well.
+  Season landing pages (`index.md`) are excluded. The placeholder describes
+  repository coverage, not publication status or the end of a season.
 - Verify that each video belongs to the intended episode in the source playlist.
 - Every episode article recounts significant actions and events in sequence,
   including consequential decisions, revelations, conflicts, and outcomes.
