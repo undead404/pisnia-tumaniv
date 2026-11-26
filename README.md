@@ -7,6 +7,21 @@
 Правила джерел, структури статей та агентного збагачення вмісту викладено в
 [AGENTS.md](AGENTS.md). Прочитайте їх перед редагуванням матеріалів.
 
+## Локальна збірка
+
+Сайт використовує [Quartz 5.2.2](https://github.com/jackyzha0/quartz/releases/tag/v5.2.2).
+Потрібні Node.js 22.22 або новіша підтримувана версія та npm 10.9.2 або новіший.
+
+```sh
+npm ci
+npm run build
+npm start
+```
+
+`npm run build` збирає сайт у `public/`. `npm start` запускає локальний перегляд
+на `http://localhost:8080`. Налаштування сайту й плагінів містяться в
+`quartz.config.yaml`. Версії плагінів зафіксовано в `package-lock.json`.
+
 ## Розгортання на GitHub Pages
 
 Адреса: https://undead404.github.io/pisnia-tumaniv/.
@@ -24,20 +39,5 @@ workflow задає `QUARTZ_BASE_URL=undead404.github.io/pisnia-tumaniv`.
 Без цієї змінної використовується адреса Cloudflare Pages, тому наявне
 розгортання там зберігає свою конфігурацію.
 
-## Quartz v4
-
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
-
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
-
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
-
-## Sponsors
-
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+Докладніше про налаштування та плагіни можна прочитати в
+[документації Quartz](https://quartz.jzhao.xyz/).

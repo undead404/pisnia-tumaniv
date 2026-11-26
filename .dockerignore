@@ -1,0 +1,7 @@
+.git
+.cache
+.quartz
+**/.quartz-cache
+node_modules
+public
+private
