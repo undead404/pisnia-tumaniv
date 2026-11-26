@@ -16,7 +16,7 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Rajdhani
+      header: Exo 2
       body: Inter
       code: JetBrains Mono
     colors:
@@ -40,6 +40,9 @@ configuration:
         tertiary: "#ff4d4d"
         highlight: rgba(102, 252, 241, 0.15)
         textHighlight: "#66fcf144"
+  fonts:
+    # Зберігаємо резервні шрифти заголовків із базових стилів Quartz.
+    enabled: false
   links:
     markdownLinkResolution: shortest
   contentIndex:
