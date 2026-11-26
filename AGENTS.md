@@ -234,12 +234,12 @@ the planet or its inhabitants does not need an entry here.
   Label noncontemporary scenes and uncertain accounts explicitly.
 - Episode recaps describe the episode as a whole; entity chronicles describe
   that entity's involvement. Keep both consistent when enriching either.
-- Maintain a season overview in the season landing page when enriching season
-  coverage. State its episode coverage explicitly, summarize established story
-  arcs, the party's latest known situation and relationship changes, and open
-  plot threads, with supporting episode and entity links. Until publication is
-  complete and verified, call this an overview of published episodes, not a
-  complete season recap. Do not invent resolutions or a finale.
+- Maintain a season overview on the season landing page when enriching season
+  coverage. State its episode coverage explicitly. Keep the homepage and the
+  visible season overview focused on the premise, main story arcs, and stakes.
+  Put detailed episode outcomes, relationship changes, and revelations in the
+  episode articles or in a collapsed season recap clearly marked for spoilers.
+  Treat publication as complete only after verifying the finale.
 
 ## Enrichment workflow and review
 

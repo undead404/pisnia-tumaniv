@@ -8,7 +8,6 @@ import { i18n } from "../i18n"
 import { FileTrieNode } from "../util/fileTrie"
 import OverflowListFactory from "./OverflowList"
 import { concatenateResources } from "../util/resources"
-import cleanNonTelling from "../helpers/clean-non-telling"
 
 type OrderEntries = "sort" | "filter" | "map"
 

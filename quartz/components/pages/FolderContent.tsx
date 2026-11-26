@@ -29,6 +29,17 @@ export default ((opts?: Partial<FolderContentOptions>) => {
 
   const FolderContent: QuartzComponent = (props: QuartzComponentProps) => {
     const { tree, fileData, allFiles, cfg } = props
+    const cssClasses: string[] = fileData.frontmatter?.cssclasses ?? []
+    const content = (
+      (tree as Root).children.length === 0
+        ? fileData.description
+        : htmlToJsx(fileData.filePath!, tree)
+    ) as ComponentChildren
+    const article = <article class={cssClasses.join(" ")}>{content}</article>
+
+    if (fileData.frontmatter?.hideFolderListing === true) {
+      return <div class="popover-hint">{article}</div>
+    }
 
     const trie = (props.ctx.trie ??= trieFromAllFiles(allFiles))
     const folder = trie.findNode(fileData.slug!.split("/"))
@@ -88,23 +99,15 @@ export default ((opts?: Partial<FolderContentOptions>) => {
           }
         })
         .filter((page) => page !== undefined) ?? []
-    const cssClasses: string[] = fileData.frontmatter?.cssclasses ?? []
-    const classes = cssClasses.join(" ")
     const listProps = {
       ...props,
       sort: options.sort,
       allFiles: allPagesInFolder,
     }
 
-    const content = (
-      (tree as Root).children.length === 0
-        ? fileData.description
-        : htmlToJsx(fileData.filePath!, tree)
-    ) as ComponentChildren
-
     return (
       <div class="popover-hint">
-        <article class={classes}>{content}</article>
+        {article}
         <div class="page-listing">
           {options.showFolderCount && (
             <p>

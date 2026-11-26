@@ -1,6 +1,15 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
+const explorer = Component.Explorer({
+  title: "Навігація",
+  mapFn: (node) => {
+    if (/^episodes\/season\d+\/S\d+E\d+$/.test(node.slug)) {
+      node.displayName = node.slugSegment
+    }
+  },
+})
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -10,7 +19,7 @@ export const sharedPageComponents: SharedLayout = {
     links: {
       GitHub: "https://github.com/undead404/pisnia-tumaniv",
       "Пісня туманів на YouTube":
-        "https://www.youtube.com/watch?v=XVuelTxLhPk&list=PL2zoJ5Mco28pMShErqXngbEWYwr65IDCb",
+        "https://www.youtube.com/playlist?list=PL2zoJ5Mco28pMShErqXngbEWYwr65IDCb",
     },
   }),
 }
@@ -39,12 +48,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer({
-      title: "Навігація",
-      mapFn: (node) => {
-        return node;
-      },
-    }),
+    explorer,
   ],
   right: [
     Component.Graph(),
@@ -68,12 +72,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer({
-      title: "Навігація",
-      mapFn: (node) => {
-        return node;
-      },
-    }),
+    explorer,
   ],
   right: [],
 }
